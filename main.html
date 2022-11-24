@@ -10,28 +10,38 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<hr>
-	<form>
-	<label for="name">Name*</label><br>
-	<input type="text" value="name"><br>
-	<label for="email">Email*</label><br>
-	<input type="email"value="name.12@mail.com"><br> 
-	<label for="Gender">Gender*</label><br>
-	<input type="radio" id="gender">male<br>
-	<input type="radio" id="gender">Female<br>
-	<input type="radio" id="gender">others<br>
-	<label for="Car brands">car brands</label><br>
-	<input type="radio" id="car brands">Audi<br>
-	<input type="radio" id="car brands">BMW<br>
-	<input type="radio" id="car brands">Mercedes<br>
-    <label for="Age">Age*</label><br>
-	<input type="Age" value="number"><br>
-	<label for="DOB">DOB*</label><br>
-	<input type="DOB" value="number"><br>
-	<label for="Password">password*</label><br>
-	<input type="password"value="password"><br>
+	<form method="post">
+	<label for="name">Name : <br>
+<input id="name" type="text" required> 
+	</label><br>
+	<label for="email"> Email : <br>
+		<input id="email" type="email" required>
+	</label><br>
+	<label for="gender">Gender : <br>
+      Male<input name="gender" type="radio" required><br>
+	 Female<input name="gender" type="radio" required><br>
+	</label><br><br>
+	<label for="cars"> Car brands : <br>
+	<select name="" id="cars" required> 
+		<option value="bmw">BMW</option>
+		<option value="audi">Audi</option>
+		<option value="mercedez">Mercedez</option></select><br><br><br>
+		<label for="name">Age : <br>
+			<input type="text" id="age" required>
+		</label><br><br>
+		<label for="dob">DOB : <br>
+			<input type="date" id="dob" required>
+		</label><br><br>
+		<label for="password">Password : <br>
+			<input type="password" id="password" required>
+		</label><br><br><br>
+		<button type="submit">Submit button</button>
+
 	
-	<input type="submit" value="Submit">
+
+
+	</label>	
+	</form>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
